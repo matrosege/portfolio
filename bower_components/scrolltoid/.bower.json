@@ -1,0 +1,14 @@
+{
+  "name": "scrolltoid",
+  "homepage": "https://github.com/zaneray/scrolltoid",
+  "_release": "c9d3408bf1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c9d3408bf1f74f064fbe9c88cde63e29d14737b6"
+  },
+  "_source": "https://github.com/zaneray/scrolltoid.git",
+  "_target": "*",
+  "_originalSource": "scrolltoid",
+  "_direct": true
+}
