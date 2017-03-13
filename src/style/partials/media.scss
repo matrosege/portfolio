@@ -7,17 +7,33 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.person-last-block {
+		margin-top: 35px;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	.resume-container .left,
+	.resume-container .left h3 {
+		text-align: left;
+	}
+	.resume-container .right,
+	.resume-container .right h3,
+	.resume-container .resume-icon {
+		text-align: left;
+		margin-bottom: 10px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.top-wrapper .top-text h1 {
+		font-size: 2em;
+		        padding-left: 10px;
+        padding-right: 10px;
+	}
+	
 }
 
 /* Custom, iPhone Retina */

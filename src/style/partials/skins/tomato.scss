@@ -3,21 +3,18 @@ $text_color: #888;
 $main_color: #222;
 $bg_light: #FAFAFA;
 
-@mixin kerning($kerning) {
-	letter-spacing: $kerning + px;
-}
 
 body {
 	color: $main_color;
 }
-	/*+ kerning(1);*/
-
 
 a {
 	color: $color;
 }
 
-p {
+p,
+body .main-footer,
+.sec-about li {
 	color: $text_color;
 }
 
@@ -30,6 +27,82 @@ p {
 .color_border {
 	border-color: $color;
 }
-.main-color-bg {
-	/*background-color: $main_color;*/
+.bg-dark {
+	background-color: $main_color;
+	color: #fff;
+	.sec-description::after {
+		background-color: #fff;
+	}
+	a {
+		color: #fff;
+	}
+}
+.bg-light {
+	background-color: $bg_light;
+}
+path {
+	fill: $bg_light;
+}
+.top-menu a:hover {
+	color: $color;
+	background-color: rgba(255,255,255,.08);
+}
+.top-text p {
+	color: $bg_light;
+}
+.sec-description  {
+	&::after {
+		background-color: $main_color;
+	}
+}
+section h3 {
+	color: $text_color;
+}
+.sec-about p:nth-child(even) {
+	color: $color;
+}
+.resume-container {
+  h3 {
+    color: $main_color;
+  }
+}
+.resume-item .year {
+	background-color: $color;
+	color: #fff;
+	font-weight: 600;
+	font-style: italic;
+}
+.sec-portfolio li {
+	color: $text_color;
+	&.active {
+		color: #fff;
+		border-bottom: 1px solid $color;
+	}
+}
+.port-item-content {
+	a {
+		border-color: $color;
+		color: $color;
+	}
+}
+.main-footer a {
+	color: $color;
+}
+.contact-icon {
+	color: $color;
+}
+.text-danger {
+	color: $color;
+}
+form {
+	input:focus,
+	textarea:focus {
+		border: 1px solid $color;
+	}
+	button {
+		background-color: $color;
+	}
+}
+.main-form {
+	color: $text_color;
 }
